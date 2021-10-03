@@ -3,11 +3,22 @@
 import sys
 
 def main():
-	print(f"Number of args = {len(sys.argv)}")
-	print(f"Arguement list = {str(sys.argv)}")
-	print("Hello to git hooks")
+	print("Number of args = ")
+	print(len(sys.argv))
+	print("Arguement list = ")
+	print(str(sys.argv))
+	print("########### ")
 
-	sys.exit(1)
+	commit_file=sys.argv[1]
+
+	with open(commit_file, "r") as fp :
+		lines = fp.readlines()
+
+		for i, line in enumerate(lines) :
+			print("The line Number is ", i )
+			print(line)
+
+	sys.exit(0)
 
 if __name__ == "__main__" :
 	main()
