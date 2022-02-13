@@ -35,3 +35,5 @@ to bypass a client-side commit hook, please add `git commit -m "First commit" --
 1. View directory structure in Linux
 
 `find . | sed -e "s/[^-][^\/]*\// |/g" -e "s/|\([^ ]\)/|-\1/"`
+
+2. To activate kernel within vscode terminal , enter C:\Users\abina\anaconda3\Scripts\activate
